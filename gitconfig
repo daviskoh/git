@@ -1,0 +1,26 @@
+[user]
+	name = daviskoh
+	email = koh.davis.0@gmail.com
+[color]
+  ui = true
+[alias]
+  st = status -sb -uall
+	lga = log --graph --oneline --all --decorate
+    unstage = reset HEAD
+    undo = "!undo() { git add . --all && git stash && git stash drop stash@{0}; }; undo"
+    ss = stash save
+    p = push
+    cm = commit -m
+[push]
+	default = matching
+[credential]
+	helper = osxkeychain
+[core]
+	editor = vim
+	excludesfile = /Users/daviskoh/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
