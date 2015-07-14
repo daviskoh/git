@@ -12,6 +12,7 @@
     p = push
     cm = commit -m
     sl = stash list
+    sp = stash pop
 [push]
 	default = matching
 [credential]
