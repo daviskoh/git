@@ -11,6 +11,7 @@
     ss = stash save
     p = push
     cm = commit -m
+    sl = stash list
 [push]
 	default = matching
 [credential]
